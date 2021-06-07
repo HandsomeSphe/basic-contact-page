@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <main>
+      <!---/////--This is the navigation bar--/////-->
+      <div class="nav">
+        <div class="burger">
+          <svg id="burger__icon">
+            <use xlink:href="image/sprite.svg#icon-burger"></use>
+          </svg>
+        </div>
+        <div class="icons">
+          <svg class="search">
+            <use xlink:href="image/sprite.svg#icon-search"></use>
+          </svg>
+          <svg class="user">
+            <use xlink:href="image/sprite.svg#icon-user"></use>
+          </svg>
+        </div>
+      </div>
+      <!---//////--this is the section with actual form--/////-->
+      <div class="wrapper">
+        <!---//////--This is the part with the actual form--/////-->
+        <div class="form__contaneir">
+          <div class="name">
+            <div class="mini-wrapper">
+              <svg class="user-icon">
+                <use xlink:href="image/sprite.svg#icon-input-user"></use>
+              </svg>
+              <p class="name-text">name</p>
+            </div>
+            <input type="text" required class="name-input" />
+          </div>
+          <div class="email">
+            <div class="mini-wrapper2">
+              <svg id="email-icon">
+                <use xlink:href="image/sprite.svg#icon-email"></use>
+              </svg>
+              <p class="email-text">email</p>
+            </div>
+            <input type="email" required class="email-input" />
+          </div>
+          <div class="message">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="message"
+            ></textarea>
+          </div>
+          <div class="btn">
+            <svg id="paper">
+              <use xlink:href="image/sprite.svg#icon-paper-plane"></use>
+            </svg>
+            <p class="send">send</p>
+          </div>
+        </div>
+        <!---/////--This is the part with owners information--/////-->
+        <div class="form__info">
+          <div class="info__email">Our email:siphelele@gmail.com</div>
+          <div class="info__tel">Tel:031 300 0000</div>
+          <div class="form__socials">
+            <div class="socials">
+              <svg class="form__socials--twitter">
+                <use xlink:href="image/sprite.svg#icon-twitter"></use>
+              </svg>
+              <p>twitter</p>
+            </div>
+            <div class="social2">
+              <svg class="form__socials--Instagram">
+                <use xlink:href="image/sprite.svg#icon-instagram"></use>
+              </svg>
+              <p>Instagram</p>
+            </div>
+            <div class="social3">
+              <svg class="form__socials--facebook">
+                <use xlink:href="image/sprite.svg#icon-facebook"></use>
+              </svg>
+              <p>facebook</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
